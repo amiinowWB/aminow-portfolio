@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aminow | Web Developer</title>
+
+<!-- AOS Animations -->
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+<!-- CSS -->
+<link rel="stylesheet" href="style.css">
+
+<!-- Three.js for Galaxy 3D -->
+<script src="https://cdn.jsdelivr.net/npm/three@0.158.0/build/three.min.js"></script>
+</head>
+<body>
+
+<!-- Galaxy Canvas -->
+<canvas id="galaxy"></canvas>
+
+<!-- Cursor -->
+<div class="cursor"></div>
+
+<!-- Header -->
+<header class="glass">
+<h1 class="logo">Aminow</h1>
+<nav>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#portfolio">Portfolio</a>
+<a href="#skills">Skills</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<!-- Hero Section -->
+<section id="home" class="hero" data-aos="fade-down">
+<h2>Hello, I'm</h2>
+<h1>Aminow</h1>
+<p>Creative Web Developer</p>
+<button onclick="scrollPortfolio()">View My Work</button>
+</section>
+
+<!-- About Section -->
+<section id="about" class="glass" data-aos="fade-up">
+<h2>About Me</h2>
+<p>
+I’m Aminow, a passionate Web Developer creating modern, fast, and beautiful websites using HTML, CSS, JavaScript, and Python.
+</p>
+</section>
+
+<!-- Portfolio Section -->
+<section id="portfolio" data-aos="fade-up">
+<h2>My Work</h2>
+<div class="grid">
+<div class="project" data-aos="zoom-in">
+<img src="https://source.unsplash.com/400x250/?website" alt="Project 1">
+<h3>Ecommerce Website</h3>
+</div>
+<div class="project" data-aos="zoom-in" data-aos-delay="100">
+<img src="https://source.unsplash.com/400x250/?coding" alt="Project 2">
+<h3>Business Landing Page</h3>
+</div>
+<div class="project" data-aos="zoom-in" data-aos-delay="200">
+<img src="https://source.unsplash.com/400x250/?webdesign" alt="Project 3">
+<h3>Modern Portfolio</h3>
+</div>
+<div class="project" data-aos="zoom-in" data-aos-delay="300">
+<img src="https://source.unsplash.com/400x250/?programming" alt="Project 4">
+<h3>Startup Website</h3>
+</div>
+</div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills" class="glass" data-aos="fade-up">
+<h2>My Skills</h2>
+<div class="skill">
+<span>HTML</span>
+<div class="skill-bar"><div class="skill-fill" data-width="90%"></div></div>
+</div>
+<div class="skill">
+<span>CSS</span>
+<div class="skill-bar"><div class="skill-fill" data-width="85%"></div></div>
+</div>
+<div class="skill">
+<span>JavaScript</span>
+<div class="skill-bar"><div class="skill-fill" data-width="80%"></div></div>
+</div>
+<div class="skill">
+<span>Python</span>
+<div class="skill-bar"><div class="skill-fill" data-width="70%"></div></div>
+</div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="glass" data-aos="fade-up">
+<h2>Contact Me</h2>
+<p>📷 Instagram: aminow</p>
+<p>📘 Facebook: aminow</p>
+<p>📧 Email: aminow@gmail.com</p>
+<p>📱 Phone: +213000000000</p>
+</section>
+
+<!-- Footer -->
+<footer class="glass">
+<p>© 2026 Aminow — Web Developer</p>
+</footer>
+
+<!-- Scripts -->
+<script src="script.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+AOS.init();
+</script>
+</body>
+</html>
